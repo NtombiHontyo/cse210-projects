@@ -4,11 +4,22 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Sandbox World!");
-        Console.WriteLine("Let's kill this C#!!");
-        Console.Write("What is your desired mark for C#? ");
-        string color = Console.ReadLine();
-        Console.WriteLine();
-        Console.WriteLine($"You will get {color} if you work hard.");
+        Console.Write("Enter a number: ");
+        string valueFromUser = Console.ReadLine();
+
+        int x = int.Parse(valueFromUser);
+        int y = 2;
+        if (x > y)
+        {
+            Console.WriteLine("Greater than 2");
+        }
+        else if (x < y)
+        {
+            Console.WriteLine("Smaller than 2");
+        }
+        else
+        {
+            Console.WriteLine("Equal to 2");
+        }
     }
 }
